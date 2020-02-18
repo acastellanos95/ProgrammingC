@@ -21,6 +21,6 @@ int main(){
     printf("Tu numero en binario es: %s\n", numbin);
   }
   else{
-    printf("Tu numero no puede ser representado con 16 bits");
+    printf("Tu numero no puede ser representado con 16 bits\n");
   }
-};
+}

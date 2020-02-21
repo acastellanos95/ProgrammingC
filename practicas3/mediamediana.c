@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 void sortFeo(int arr[], int len){
 /*
@@ -54,6 +54,23 @@ void moda(int arr[], int len){
   }
 }
 
+void modahash(int arr[], int len){
+  struct dict
+  {
+    int key;
+    int value;
+  };
+  //int mode[];
+  struct dict arreglohash[len];
+  for (int i = 0; i < len; i++)
+  {
+    arreglohash[i].key = arr[i];
+    arreglohash[i].value = 0;
+    printf(" (%d,%d)", arreglohash[i].key, arreglohash[i].value);
+  }
+  
+}
+
 
 void printarr(int arr[], int len){
 /*
@@ -84,4 +101,5 @@ int main(){
   printarr(A, N);
   printf("La mediana es: %d\n", mediana(A, N));
   moda(A, N);
+  modahash(A, N);
 }
